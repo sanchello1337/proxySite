@@ -1270,7 +1270,7 @@ h1 {
     flex-direction: column;
   }
   .review__rate{
-    display:none;
+    display: none;
   }
   .review__item{margin-top:2rem;}
   .hello__container img {
