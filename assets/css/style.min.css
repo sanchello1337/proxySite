@@ -1354,11 +1354,16 @@ h1 {
   .order__about {
     display: block;
     margin: 2rem auto;
+    width: 100%;
   }
 
   .order__row {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .order__row .order__about {
+    display: none;
   }
 
   .order__about-text {

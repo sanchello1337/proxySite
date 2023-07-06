@@ -56,25 +56,32 @@ function typeSelect(element){
     proxyType=element.id
     console.log(proxyType)
     element.classList.toggle('order__type_selected')
-    document.querySelector('.order__about-title').innerText=element.innerText
+    document.querySelectorAll('.order__about-title').forEach(el=>{
+        el.innerText=element.innerText
+    })
     if (proxyType=='private'){
-        document.querySelector('.order__about-text').innerHTML=`Private proxy has a number of advantages. It works much faster relative to open servers. The operation system allows you to display information on your PC in a compressed form, that is, it saves external traffic, as well as reduces the load on the external network. You have full control over access to the local network. Using private proxies also enables you to filter advertisements and malicious files.
-        <ul>
-            <li>Lower blocking rate</li>
-            <li>Highly anonymous</li>
-            <li>Top speed & performance</li>
-            <li>Long sessions & 99.9% uptime</li>
-        </ul>`
+        document.querySelectorAll('.order__about-text').forEach(el=>{
+            el.innerHTML=`Private proxy has a number of advantages. It works much faster relative to open servers. The operation system allows you to display information on your PC in a compressed form, that is, it saves external traffic, as well as reduces the load on the external network. You have full control over access to the local network. Using private proxies also enables you to filter advertisements and malicious files.
+            <ul>
+                <li>Lower blocking rate</li>
+                <li>Highly anonymous</li>
+                <li>Top speed & performance</li>
+                <li>Long sessions & 99.9% uptime</li>
+            </ul>`
+        })
         
     }
     if (proxyType=='rotaining'){
-        document.querySelector('.order__about-text').innerHTML=`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore earum facilis reprehenderit! Voluptatum harum vitae facere numquam natus, molestias atque repellendus maiores at illo accusamus mollitia unde temporibus nihil repudiandae?`
+        document.querySelectorAll('.order__about-text').forEach(el=>{
+            el.innerHTML=`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore earum facilis reprehenderit! Voluptatum harum vitae facere numquam natus, molestias atque repellendus maiores at illo accusamus mollitia unde temporibus nihil repudiandae?`})
     }
     if (proxyType=='shared'){
-        document.querySelector('.order__about-text').innerHTML=`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, illum rerum minima officia eum ipsa perspiciatis saepe nam vero. Nam, tenetur reiciendis autem eum voluptatum mollitia repellendus voluptas, iusto obcaecati voluptate nostrum fugiat tempora molestias! Explicabo dicta non quisquam, vero corporis sapiente beatae qui laborum error quia dignissimos et mollitia, odio doloribus? Dolore earum facilis reprehenderit! Voluptatum harum vitae facere numquam natus, molestias atque repellendus maiores at illo accusamus Facilis deserunt rerum earum cum tempora pariatur blanditiis magni ratione facere? Quis, corrupti. Temporibus, sed distinctio! Ratione?`
+        document.querySelectorAll('.order__about-text').forEach(el=>{
+            el.innerHTML=`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, illum rerum minima officia eum ipsa perspiciatis saepe nam vero. Nam, tenetur reiciendis autem eum voluptatum mollitia repellendus voluptas, iusto obcaecati voluptate nostrum fugiat tempora molestias! Explicabo dicta non quisquam, vero corporis sapiente beatae qui laborum error quia dignissimos et mollitia, odio doloribus? Dolore earum facilis reprehenderit! Voluptatum harum vitae facere numquam natus, molestias atque repellendus maiores at illo accusamus Facilis deserunt rerum earum cum tempora pariatur blanditiis magni ratione facere? Quis, corrupti. Temporibus, sed distinctio! Ratione?`})
     }
     if (proxyType=='privare'){
-        document.querySelector('.order__about-text').innerHTML=`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, illum rerum minima officia eum ipsa perspiciatis saepe nam vero. Nam, tenetur reiciendis autem eum voluptatum mollitia repellendus voluptas, iusto obcaecati voluptate nostrum fugiat tempora molestias! Explicabo dicta non quisquam, vero corporis sapiente beatae qui laborum error quia dignissimos et mollitia, odio doloribus? Facilis deserunt rerum earum cum tempora pariatur blanditiis magni ratione facere? Quis, corrupti. Temporibus, sed distinctio! Ratione?`
+        document.querySelectorAll('.order__about-text').forEach(el=>{
+            el.innerHTML=`Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt, illum rerum minima officia eum ipsa perspiciatis saepe nam vero. Nam, tenetur reiciendis autem eum voluptatum mollitia repellendus voluptas, iusto obcaecati voluptate nostrum fugiat tempora molestias! Explicabo dicta non quisquam, vero corporis sapiente beatae qui laborum error quia dignissimos et mollitia, odio doloribus? Facilis deserunt rerum earum cum tempora pariatur blanditiis magni ratione facere? Quis, corrupti. Temporibus, sed distinctio! Ratione?`})
     }
 }
 const selectorCountry = document.querySelectorAll('.country')
