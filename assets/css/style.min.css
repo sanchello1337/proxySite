@@ -18,16 +18,7 @@
   margin: 0;
   border: 0;
 }
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
 *,
 :after,
 :before {
@@ -313,23 +304,12 @@ h1 {
   background-color: #b42c66;
 }
 
-.order__row {
-  display: flex;
-  justify-content: space-between;
-}
-.order__row.order__about {
-        display: block;
-        width: 32.64286rem;
-        height: 30.28571rem;
-        border-radius: 0.71429rem;
-        background: #D9D9D9;
-
-.order__about{
-    display: none;
-    width: 32.64286rem;
-    height: 30.28571rem;
-    border-radius: 0.71429rem;
-    background: #D9D9D9;
+.order__about {
+  display: none;
+  width: 32.64286rem;
+  height: 30.28571rem;
+  border-radius: .71429rem;
+  background: #d9d9d9;
 }
 
 .order__about ul {
@@ -343,6 +323,34 @@ h1 {
 }
 
 .order__about ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.order__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order__row .order__about {
+  display: block;
+  width: 32.64286rem;
+  height: 30.28571rem;
+  border-radius: .71429rem;
+  background: #d9d9d9;
+}
+
+.order__row .order__about ul {
+  color: #000;
+  font-size: 1.28571rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2rem 2rem 2rem 0;
+}
+
+.order__row .order__about ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
@@ -1256,6 +1264,24 @@ h1 {
     text-align: center;
   }
 
+  .review__rate {
+    display: none;
+  }
+
+  .review__container {
+    display: flex;
+    align-items: center;
+  }
+
+  .review__container,
+  .review__row {
+    flex-direction: column;
+  }
+
+  .review__item {
+    margin-top: 2rem;
+  }
+
   .start {
     margin-top: 10rem;
   }
@@ -1273,13 +1299,7 @@ h1 {
   html {
     font-size: 10px;
   }
-  .review__row{
-    flex-direction: column;
-  }
-  .review__rate{
-    display: none;
-  }
-  .review__item{margin-top:2rem;}
+
   .hello__container img {
     left: 0;
     opacity: .4;
@@ -1330,20 +1350,19 @@ h1 {
   .order__type_selected {
     background-color: #b42c66;
   }
-  .order__about{
-        display: block;
-        margin: 2rem auto;
-    }
+
+  .order__about {
+    display: block;
+    margin: 2rem auto;
+  }
+
   .order__row {
     flex-direction: column-reverse;
     align-items: center;
   }
-  .order__row.order__about{
-            display: none;
-        }
-    
-  .order__about{
-    display: none;
+
+  .order__about-text {
+    font-size: 1.28571rem;
   }
 
   .benefits__row {
