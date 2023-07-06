@@ -1323,8 +1323,8 @@ h1 {
     align-items: center;
   }
 
-  .order__about-text {
-    font-size: 1.28571rem;
+  .order__about{
+    display: none;
   }
 
   .benefits__row {
