@@ -87,6 +87,12 @@ img {
   vertical-align: top;
 }
 
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 h1,
 h2,
 h3,
