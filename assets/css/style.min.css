@@ -1268,6 +1268,8 @@ h1 {
   }
   .review__row{
     flex-direction: column;
+  }
+  .review__item{margin-top:2rem;}
   .hello__container img {
     left: 0;
     opacity: .4;
