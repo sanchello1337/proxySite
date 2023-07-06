@@ -1266,7 +1266,8 @@ h1 {
   html {
     font-size: 10px;
   }
-
+  .review__row{
+    flex-direction: column;
   .hello__container img {
     left: 0;
     opacity: .4;
