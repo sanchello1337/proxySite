@@ -1,0 +1,36 @@
+.article {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.article h2 a {
+  color: hsla(0,0%,100%,.3);
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: .17143rem;
+}
+
+.article__text,
+.article__theme {
+  color: #fff;
+  font-size: 1.28571rem;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: .10286rem;
+}
+
+.article__text {
+  margin-top: 3rem;
+}
+
+@media (max-width:776px) {
+  .article {
+    margin-top: 10rem;
+  }
+}

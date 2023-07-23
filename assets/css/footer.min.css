@@ -15,8 +15,14 @@
 .footer__nav-column li a {
   font-family: Open Sans;
   font-size: 1.14rem;
+  font-weight: 600;
   color: gray;
   line-height: 1.42857143;
+}
+
+.footer__nav-column li a:hover {
+  background-color: gray;
+  color: #fff;
 }
 
 .footer__nav-title {
@@ -31,6 +37,7 @@
   font-size: 1rem;
   color: gray;
   padding-top: 10px;
+  font-weight: 600;
   padding-bottom: 25px;
   max-width: 19rem;
   line-height: 1.42857143;
@@ -45,20 +52,23 @@
 
 .footer__searchbar input {
   width: 100%;
-  font-size: 1rem;
   padding: 13px 20px 12px 30px;
-  font-family: Open Sans;
-  color: #000;
   border: 1px solid #efefef;
   border-radius: 50px;
+}
+
+.footer__searchbar-button,
+.footer__searchbar input {
+  font-size: 1rem;
+  font-family: Open Sans;
+  color: #000;
+  font-weight: 600;
 }
 
 .footer__searchbar-button {
   position: absolute;
   background-color: #fdd700;
-  color: #000;
   border-radius: 50px;
-  font-size: 1rem;
   line-height: 1;
   margin: 0;
   padding: 16px 26px;
@@ -70,6 +80,7 @@
   text-align: center;
   font-size: 1rem;
   font-family: Open Sans;
+  font-weight: 600;
   color: gray;
   margin-bottom: 40px;
 }
@@ -83,6 +94,7 @@
 .design {
   color: gray;
   font-family: Open Sans;
+  font-weight: 600;
   font-size: 1rem;
 }
 
@@ -95,6 +107,7 @@
   color: gray;
   font-family: Open Sans;
   font-size: 1rem;
+  font-weight: 600;
 }
 
 .payment-list li {

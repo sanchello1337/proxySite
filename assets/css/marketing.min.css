@@ -1,0 +1,201 @@
+.hello__info h1 {
+  margin-top: 1rem;
+}
+
+.hello__info .hello__subtitle {
+  margin-top: 0;
+  max-width: 43rem;
+  width: 100%;
+  font-weight: 400;
+}
+
+.hello__info .hello__button {
+  margin-top: 6rem;
+}
+
+.start {
+  margin-top: -4rem;
+}
+
+.start .start__subtitle {
+  z-index: -1;
+}
+
+.info__content {
+  margin-top: 3.64rem;
+}
+
+.info__item {
+  position: relative;
+  display: flex;
+  align-items: end;
+  max-width: 45rem;
+}
+
+.info__item img {
+  margin-bottom: 1rem;
+}
+
+.info__text {
+  margin-left: 4rem;
+}
+
+#design1,
+#design2 {
+  left: 4.4rem;
+}
+
+#design2 {
+  top: -4rem;
+}
+
+#design3 {
+  left: 4.4rem;
+  top: -8rem;
+}
+
+#item2 {
+  left: 24rem;
+  top: -4rem;
+}
+
+#item3 {
+  top: -8rem;
+}
+
+#item4 {
+  left: 24rem;
+  top: -12rem;
+  align-items: center;
+}
+
+.features {
+  margin-top: 10rem;
+}
+
+.features__row {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.features__item {
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.features__item img {
+  width: 7.2rem;
+  margin-bottom: 2rem;
+}
+
+.features__title {
+  color: #fff;
+  font-family: Inter;
+  font-size: 1.42857rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.features__subtitle,
+.features__title {
+  text-align: center;
+}
+
+.payments {
+  margin-bottom: 1.8rem;
+}
+
+@media (max-width:992px) {
+  .info__text {
+    max-width: 20rem;
+  }
+
+  #design1,
+  #design2 {
+    left: 4.4rem;
+  }
+
+  #design2 {
+    top: -4rem;
+  }
+
+  #design3 {
+    left: 4.4rem;
+    top: -8rem;
+  }
+
+  #item2 {
+    left: 28rem;
+    top: -4rem;
+  }
+
+  #item3 {
+    top: -10rem;
+    left: 2rem;
+  }
+
+  #item4 {
+    left: 28rem;
+    top: -16rem;
+    align-items: center;
+  }
+}
+
+@media (max-width:767px) {
+  .features__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hello__lower-row {
+    display: none;
+  }
+
+  .hello__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hello__button {
+    position: static;
+    align-self: center;
+  }
+
+  .hello {
+    margin-bottom: 8rem;
+  }
+
+  .features__item {
+    margin-top: 2rem;
+    max-width: 20rem;
+  }
+
+  .info__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .start {
+    margin-top: 6rem;
+  }
+
+  #design1,
+  #design2,
+  #design3 {
+    display: none;
+  }
+
+  #item1,
+  #item2,
+  #item3,
+  #item4 {
+    position: static;
+  }
+}
